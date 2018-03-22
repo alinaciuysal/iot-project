@@ -8,3 +8,4 @@
     * Node-RED
 - #### [Hardware](https://user-images.githubusercontent.com/11362990/37792040-01257974-2e0b-11e8-884d-40326ec4c475.jpg)
 - #### [Demo](https://youtu.be/HktxqoyY9cs)
+- #### [Summary](https://github.com/alinaciuysal/iot-course-project/blob/master/summary.pdf)
