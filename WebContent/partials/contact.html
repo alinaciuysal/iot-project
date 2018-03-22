@@ -1,0 +1,75 @@
+<!-- Page Content -->
+<style>
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  font-size:20px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">Our Services
+                <small>for Customers</small>
+            </h1>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+    <!-- /.row -->
+
+    <!-- Service Paragraphs -->
+	<div ng-app="app" ng-controller="PageCtrl">
+	    <div class="row">
+	        <div class="col-md-8">
+	            <h2 class="page-header">Details for First Vending Machine</h2>
+				<table>
+					<thead>           
+					      <th>Product ID</th>
+					      <th>Product Name</th>
+					      <th>Product Amount</th>
+				  	</thead>
+				  <tr ng-repeat="product in firstMachineDetails">
+				    <td>{{ product.id }}</td>
+				    <td>{{ product.productName }}</td>
+				    <td>{{ product.amount }}</td>
+				   	<td><button ng-click="deneme(product.id)"> Refill Products in First Vending Machine</button></td>
+				  </tr>
+				</table>
+				<div>&nbsp</div>
+				
+	        </div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-md-8">
+	            <h2 class="page-header">Details for Second Vending Machine</h2>
+	            
+				<table>
+					<thead>           
+					      <th>Product ID</th>
+					      <th>Product Name</th>
+					      <th>Product Amount</th>
+				  	</thead>
+					  <tr ng-repeat="product2 in secondMachineDetails">
+					    <td>{{ product2.id }}</td>
+					    <td>{{ product2.productName }}</td>
+					    <td>{{ product2.amount }}</td>
+					  </tr>
+				</table>
+				<h2></h2>
+				<div>&nbsp</div>
+				<button ng-click="refillProductsInSecondMachine()"> Refill Products in Second Vending Machine</button>
+	        </div>
+	    </div>
+	</div>
+</div>
