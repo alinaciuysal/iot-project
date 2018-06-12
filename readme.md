@@ -2,7 +2,7 @@
 - #### [Conceptual approach](https://user-images.githubusercontent.com/11362990/37791994-dbd76f38-2e0a-11e8-8532-7f1120fa48e5.png)
 - #### Stack
     * Spring Framework
-    * Hibarnate
+    * Hibernate
     * AngularJS (version 1)
     * Bootstrap
     * Node-RED
